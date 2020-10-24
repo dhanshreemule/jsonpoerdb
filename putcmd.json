@@ -1,0 +1,104 @@
+{
+  "version": 6,
+  "entities": [
+    {
+      "entity": {
+        "type": "Project",
+        "id": "7c4eea49-265a-4f8b-af41-66dfee34dd52",
+        "name": "put_Cmd"
+      },
+      "children": [
+        {
+          "entity": {
+            "type": "Scenario",
+            "description": "put coomand",
+            "id": "6c2ed920-0603-44ae-86cd-40e071fa1aa0",
+            "name": "Scenario 1"
+          },
+          "children": [
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text",
+                  "textBody": "{\n    \"token\": \"90937304|-31948792534616536|90932599\",\n    \"cmd\": \"PUT\",\n    \"dbName\": \"Employee\",\n    \"rel\": \"Emp-rel\",\n    \"jsonStr\": {\n        \"name\": \"dhanshree mule\",\n        \"email\": \"dhanshreemule@gmail.com\",\n        \n\n    }\n}\n"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "name": "http",
+                    "version": "V11"
+                  },
+                  "host": "api.login2explore.com:5577",
+                  "path": "/api/iml"
+                },
+                "id": "9890845c-5868-4776-96bf-4d08700b9edf",
+                "name": "Put_cmd1",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/json"
+                  }
+                ]
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text",
+                  "textBody": "{\n    \"token\": \"90937304|-31948792534616536|90932599\",\n    \"cmd\": \"PUT_ALL\",\n    \"dbName\": \"Employee\",\n    \"rel\": \"emp-rel\",\n    \"templateStr\": {},\n    \"colsAutoIndex\": true,\n    \"jsonStr\": [\n        {\n            \"name\": \"PQR\",\n            \"email\": \"@gmail.com\",\n            \"password\": \"3293\",\n            \"passwrd\": \"3293\"\n\n        },\n        {\n            \"name\": \"XYZ\",\n            \"email\": \"@gmail.com\",\n            \"password\": \"3823\",\n            \"passwrd\": \"3823\"\n\n        },\n        {\n            \"name\": \"ABC\",\n            \"email\": \"@gmail.com\",\n            \"password\": \"3273\",\n            \"passwrd\": \"3273\"\n\n        }\n    ]\n}"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "name": "http",
+                    "version": "V11"
+                  },
+                  "host": "api.login2explore.com:5577",
+                  "path": "/api/iml"
+                },
+                "id": "47d4c165-7762-4136-b3f6-ec88a684d83d",
+                "name": "put_multi_cmd",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/json"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
