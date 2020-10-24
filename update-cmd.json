@@ -1,0 +1,54 @@
+{
+  "version": 6,
+  "entities": [
+    {
+      "entity": {
+        "type": "Project",
+        "id": "25de0a70-dbbe-4aa3-883e-08dcf19ea0fe",
+        "name": "update_cmd"
+      },
+      "children": [
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n    \"token\": \"\",\n    \"cmd\": \"UPDATE\",\n    \"dbName\": \"Employee-DB\",\n    \"rel\": \"Employee\",\n    \"jsonStr\": {\n       \"3\":{\n        \"full_name\": \"gargee Mishra\",\n        \"email_address\":\"123@gmail.com\",\n        \"mobile_number\":63768579\n\n      },\n       \"6\":{\n        \"full_name\":\"Kanishk Mishra\",\n        \"email_address\":\"sulbha@gmail.com\",\n        \"mobile_number\":763767\n      },\n       \"5\":{\n        \"full_name\":\"Sulbha Mishra\",\n        \"email_address\":\"1234@gmail.com\"\n      }\n   }\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "api.login2explore.com:5577",
+              "path": "/api/iml"
+            },
+            "id": "264d3154-75c8-436e-8137-a4797a731990",
+            "name": "update-cmd",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
