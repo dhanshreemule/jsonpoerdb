@@ -1,0 +1,54 @@
+{
+  "version": 6,
+  "entities": [
+    {
+      "entity": {
+        "type": "Project",
+        "id": "fc5ef4ca-be8d-4d4f-9010-f71ba5bf0d85",
+        "name": "get_cmd"
+      },
+      "children": [
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n    \"token\": \"90937304|-31948792534616536|90932599\",\n    \"cmd\": \"GET\",\n    \"dbName\": \"Employee\",\n    \"rel\": \"Emp-rel\",\n    \"jsonStr\":{\n        \"name\": \"dhanshree mule\"\n    }\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "api.login2explore.com:5577",
+              "path": "//api/irl"
+            },
+            "id": "430f6f17-4f65-4cd3-8983-87bbf0f3d6e3",
+            "name": "get_cmd",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
